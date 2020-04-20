@@ -13,11 +13,11 @@ body{
     margin:0 auto;
 }
 
-/* ------------ header =------------ */
+/* ------------ header ------------ */
 .header{
     width: 380px;
     height:200px;
-    background-image: url('bg1.jpg');
+    background-image: url('../img/bg1.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -155,7 +155,3 @@ body{
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
-
-
-
-
