@@ -17,6 +17,7 @@ const today = new Date();
 
 dateElement.innerHTML = today.toLocateDateString("en-US", options);
 
+/*
 //Variables 
 let LIST, id;
 
