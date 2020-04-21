@@ -47,8 +47,8 @@ location.reload();
 
 
 // Show current date
-const options = {weekday : "long", month:"short", day:"numeric"};
-const today = new Date();
+var options = {weekday : "long", month:"short", day:"numeric"};
+var today = new Date();
 
 dateElement.innerHTML = today.toLocateDateString("en-US", options);
 
