@@ -11,6 +11,12 @@ const CHECK = "fa-check-circle";
 const UNCHECK = "fa-check-thin";
 const LINE_THROUGH = "lineThrough";
 
+// Show current date
+const options = {weekday : "long", month:"short", day:"numeric"};
+const today = new Date();
+
+dateElement.innerHTML = today.toLocateDateString("en-US", options);
+
 //Variables 
 let LIST, id;
 
@@ -44,13 +50,6 @@ location.reload();
 
 //add item to localstorage
 //localStorage.setItem("TODO", JSON.stringify(LIST));
-
-
-// Show current date
-const options = {weekday : "long", month:"short", day:"numeric"};
-const today = new Date();
-
-dateElement.innerHTML = today.toLocateDateString("en-US", options);
 
 // add to do function
 
