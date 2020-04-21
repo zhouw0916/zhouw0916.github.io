@@ -3,7 +3,7 @@
 // Select the Elements
 const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
-const list = document.getElemenetById("list");
+const list = document.getElementById("list");
 const input = document.getElementById("input");
 
 // Class names for tasks
