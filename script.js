@@ -22,7 +22,7 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 function addToDo(toDo){
     
     const item = `<li class="item">
-                    <i class="far fa-circle" job="complete" id="0"></i>
+                    <i class="far fa-circle co" job="complete" id="0"></i>
                     <p class="text">${toDo}</p>
                     <i class="fa fa-trash-alt de" job="delete" id="0"></i>
                     </li>
