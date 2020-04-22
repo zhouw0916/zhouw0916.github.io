@@ -12,10 +12,10 @@ const UNCHECK = "fa-check-thin";
 const LINE_THROUGH = "lineThrough";
 
 // Show current date
-var options = { weekday : 'long', month:'short', day: 'numeric' };
+var options = { weekday : "long", month:"short", day: "numeric" };
 var today = new Date();
 
-dateElement.innerHTML = today.toLocateDateString('en-US', options);
+dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 //Variables 
 let LIST, id;
