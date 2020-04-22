@@ -17,6 +17,23 @@ var today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
+// add to do function
+
+function addToDo(toDo){
+    
+    const item = `
+                    <i class="fa fa-check-circle co" job="complete" id="0"></i>
+                    <p class="text">${toDo}</p>
+                    <i class="fa fa-trash-alt de" job="delete" id="0"></i>
+                 `;
+    const position = "beforeend";
+
+    list.insertAdjacentHTML(position, item);
+}
+
+addToDo("Collect & Sell 10 Shells")
+
+/*
 //Variables 
 let LIST, id;
 
@@ -133,4 +150,4 @@ list.addEventListener("click", function(event){
     //add item to localstorage
     localStorage.setItem("TODO", JSON.stringify(LIST));
 
-});
+}); */
