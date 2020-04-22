@@ -11,6 +11,9 @@ const CHECK = "fa-check-circle";
 const UNCHECK = "far fa-circle";
 const LINE_THROUGH = "lineThrough";
 
+//Variables
+let LIST, id;
+
 // Show current date
 var options = { weekday : "long", month:"short", day: "numeric", year: "numeric" };
 var today = new Date();
@@ -50,10 +53,20 @@ document.addEventListener("keyup",function(even){
 
         //if the input isn't empty
         if(toDo){
-            addToDo(toDo);
+            addToDo(toDo, id, false, false);
+
+            LIST.push({
+                name : toDo,
+                id : id,
+                done : false,
+                trash : false
+            });
+
+            id++;
         }
         input.value = "";
     }
 });
 
-addToDo("Collect & Sell 10 Shells", 1, false, true);
+//step in 40 second mark to show how const DONE, LINE, & if(trash) work
+//addToDo("Collect & Sell 10 Shells", 1, false, true);
