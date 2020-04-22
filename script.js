@@ -12,7 +12,7 @@ const UNCHECK = "fa-check-thin";
 const LINE_THROUGH = "lineThrough";
 
 // Show current date
-var options = { weekday : "long", month:"short", day: "numeric" };
+var options = { weekday : "long", month:"short", day: "numeric", year: "numeric" };
 var today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
