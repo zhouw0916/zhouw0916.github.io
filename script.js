@@ -20,11 +20,19 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 // add to do function
 
 function addToDo(toDo, id, done, trash){
+
+    //if items are in the trash, it will prevent the list code(below code)
+    //from running
+    if(trash){ return; }
+
+    const DONE = done ? CHECK : UNCHECK;
+    const LINE = done ? LINE_THROUGH : "";
+
     
     const item = `<li class="item">
-                    <i class="far fa-circle co" job="complete" id="0"></i>
-                    <p class="text">${toDo}</p>
-                    <i class="fa fa-trash-alt de" job="delete" id="0"></i>
+                    <i class="far ${DONE} co" job="complete" id="${id}"></i>
+                    <p class="text ${LINE}">${toDo}</p>
+                    <i class="fa fa-trash-alt de" job="delete" id="${id}"></i>
                     </li>
                  `;
     const position = "beforeend";
@@ -47,3 +55,5 @@ document.addEventListener("keyup",function(even){
         input.value = "";
     }
 });
+
+addToDo("Collect & Sell 10 Shells", 1, true, false);
