@@ -11,7 +11,7 @@ const CHECK = "fa-check-circle";
 const UNCHECK = "far fa-circle";
 const LINE_THROUGH = "lineThrough";
 
-//Variables
+//Variables(LIST has a array([]) and id starts it at 0 for the array)
 let LIST= []
     , id = 0;
 
@@ -71,3 +71,35 @@ document.addEventListener("keyup",function(even){
 
 //step in 40 second mark to show how const DONE, LINE, & if(trash) work
 //addToDo("Collect & Sell 10 Shells", 1, false, true);
+
+
+// function when things are complete(aka complete to do)
+
+function completeToDo(element){
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".t").classList.toggle(LINE_THROUGH);
+
+    LIST[element.id].done = LIST[element.id].done ? false : true;
+}
+
+
+//function to remote(aka remove to do)
+function removeToDo(element){
+    element.parentNode.parentNode.removeChild(element.parentNode);
+
+    LIST[element.id].trash = true;
+}
+
+// target the items created dynamically
+
+list.addEventListener("click", function(event){
+    const element = event.target; //this code returns the clicked element inside the list
+    const elementJob = element.attributes.job.value; //this code completes or deletes
+
+    if(elementJob == "complete"){
+        completeToDo(element);
+    }else if(elementJob == "remove"){
+        removeToDo(element);
+    }
+});
