@@ -19,7 +19,7 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 // add to do function
 
-function addToDo(toDo){
+function addToDo(toDo, id, done, trash){
     
     const item = `<li class="item">
                     <i class="far fa-circle co" job="complete" id="0"></i>
@@ -32,7 +32,8 @@ function addToDo(toDo){
     list.insertAdjacentHTML(position, item);
 }
 
-addToDo("Collect & Sell 10 Shells")
+//below was the test code to see if the list worked originally
+//addToDo("Collect & Sell 10 Shells")
 
 // add an item to the list user the enter key
 document.addEventListener("keyup",function(even){
@@ -43,5 +44,6 @@ document.addEventListener("keyup",function(even){
         if(toDo){
             addToDo(toDo);
         }
+        input.value = "";
     }
 });
