@@ -56,4 +56,4 @@ document.addEventListener("keyup",function(even){
     }
 });
 
-addToDo("Collect & Sell 10 Shells", 1, false, false);
+addToDo("Collect & Sell 10 Shells", 1, false, true);
