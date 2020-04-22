@@ -99,7 +99,7 @@ list.addEventListener("click", function(event){
 
     if(elementJob == "complete"){
         completeToDo(element);
-    }else if(elementJob == "remove"){
+    }else if(elementJob == "delete"){
         removeToDo(element);
     }
 });
