@@ -9,7 +9,7 @@ const input = document.getElementById("input");
 // Class names for tasks
 const CHECK = "fa-check-circle";
 const UNCHECK = "far fa-circle";
-const LINE_THROUGH = "fa-strikethrough";
+const LINE_THROUGH = "lineThrough";
 
 // Show current date
 var options = { weekday : "long", month:"short", day: "numeric", year: "numeric" };
