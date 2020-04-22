@@ -12,7 +12,8 @@ const UNCHECK = "far fa-circle";
 const LINE_THROUGH = "lineThrough";
 
 //Variables
-let LIST, id;
+let LIST= []
+    , id = 0;
 
 // Show current date
 var options = { weekday : "long", month:"short", day: "numeric", year: "numeric" };
