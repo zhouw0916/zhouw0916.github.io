@@ -8,7 +8,7 @@ const input = document.getElementById("input");
 
 // Class names for tasks
 const CHECK = "fa-check-circle";
-const UNCHECK = "fa-circle";
+const UNCHECK = "far fa-circle";
 const LINE_THROUGH = "fa-strikethrough";
 
 // Show current date
@@ -22,7 +22,7 @@ dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 function addToDo(toDo){
     
     const item = `
-                    <i class="fa fa-circle co" job="complete" id="0"></i>
+                    <i class="far fa-circle" job="complete" id="0"></i>
                     <p class="text">${toDo}</p>
                     <i class="fa fa-trash-alt de" job="delete" id="0"></i>
                  `;
