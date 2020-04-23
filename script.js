@@ -71,7 +71,7 @@ document.addEventListener("keyup",function(even){
 });
 
 //step in 40 second mark to show how const DONE, LINE, & if(trash) work
-addToDo("Collect & Sell 10 Shells", 1, false, false);
+addToDo("Collect & Sell 10 Shells", 1, false, true);
 //(true,false)->complete task(use check and linethrough)
 //(false,false)->incomplete task(empty circle and no linethrough)
 //(false,true)-->addToDo script is deleted
