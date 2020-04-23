@@ -54,7 +54,8 @@ document.addEventListener("keyup",function(even){
 
         //if the input isn't empty
         if(toDo){
-            addToDo(toDo, id, false, false);
+            addToDo(toDo);
+           /* addToDo(toDo, id, false, false);
 
             LIST.push({
                 name : toDo,
@@ -63,7 +64,7 @@ document.addEventListener("keyup",function(even){
                 trash : false
             });
 
-           // id++;
+           // id++;*/
         }
         input.value = "";
     }
