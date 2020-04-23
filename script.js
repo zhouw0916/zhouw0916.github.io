@@ -77,35 +77,7 @@ document.addEventListener("keyup",function(even){
 //(false,false)->incomplete task(empty circle and no linethrough)
 //(false,true)-->addToDo script is deleted
 
-/*
-// function when things are complete(aka complete to do)
 
-function completeToDo(element){
-    element.classList.toggle(CHECK);
-    element.classList.toggle(UNCHECK);
-    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
-
-    LIST[element.id].done = LIST[element.id].done ? false : true;
-}
+// Complete function/Complete toDo-41:00 in video
 
 
-//function to remote(aka remove to do)
-function removeToDo(element){
-    element.parentNode.parentNode.removeChild(element.parentNode);
-
-    LIST[element.id].trash = true;
-}
-
-// target the items created dynamically
-
-list.addEventListener("click", function(event){
-    const element = event.target; //this code returns the clicked element inside the list
-    const elementJob = element.attributes.job.value; //this code completes or deletes
-
-    if(elementJob == "complete"){
-        completeToDo(element);
-    }else if(elementJob == "delete"){
-        removeToDo(element);
-    }
-});
-*/
