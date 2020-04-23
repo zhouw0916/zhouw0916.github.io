@@ -63,16 +63,16 @@ document.addEventListener("keyup",function(even){
                 trash : false
             });
 
-            id++;
+           // id++;
         }
         input.value = "";
     }
 });
 
 //step in 40 second mark to show how const DONE, LINE, & if(trash) work
-//addToDo("Collect & Sell 10 Shells", 1, false, true);
+addToDo("Collect & Sell 10 Shells", 1, false, true);
 
-
+/*
 // function when things are complete(aka complete to do)
 
 function completeToDo(element){
@@ -103,3 +103,4 @@ list.addEventListener("click", function(event){
         removeToDo(element);
     }
 });
+*/
