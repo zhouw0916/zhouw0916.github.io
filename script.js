@@ -102,6 +102,7 @@ list.addEventListener("click", function(event){
 
     if(elementJob == "complete"){
         completeToDo(element);
-    }else if(elementJob == "delete")
+    }else if(elementJob == "delete"){
         removeToDo(element);
+    }
 });
