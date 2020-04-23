@@ -87,4 +87,4 @@ function completeToDo(element){
     LIST[element.id].done = LIST[element.id].done ? false : true;  
 }
 
-
+// Remove the element function /Remove toDo-41.50
