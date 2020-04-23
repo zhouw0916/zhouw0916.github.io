@@ -79,5 +79,12 @@ document.addEventListener("keyup",function(even){
 
 
 // Complete function/Complete toDo-41:00 in video
+function completeToDo(element){
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+
+    LIST[element.id].done = LIST[element.id].done ? false : true;  
+}
 
 
