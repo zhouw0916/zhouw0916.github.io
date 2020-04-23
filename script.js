@@ -54,8 +54,7 @@ document.addEventListener("keyup",function(even){
 
         //if the input isn't empty
         if(toDo){
-            addToDo(toDo);
-           /* addToDo(toDo, id, false, false);
+            addToDo(toDo, id, false, false);
 
             LIST.push({
                 name : toDo,
@@ -64,14 +63,16 @@ document.addEventListener("keyup",function(even){
                 trash : false
             });
 
-           // id++;*/
+             id++;
         }
         input.value = "";
     }
 });
 
 //step in 40 second mark to show how const DONE, LINE, & if(trash) work
-addToDo("Collect & Sell 10 Shells", 1, false, true);
+//=================================================================
+//addToDo("Collect & Sell 10 Shells", 1, false, true);
+//==================================================================
 //(true,false)->complete task(use check and linethrough)
 //(false,false)->incomplete task(empty circle and no linethrough)
 //(false,true)-->addToDo script is deleted
