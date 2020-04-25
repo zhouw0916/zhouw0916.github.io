@@ -8,7 +8,7 @@ const input = document.getElementById("input");
 
 // Class names for tasks
 const CHECK = "fa-check-circle";
-const UNCHECK = "far fa-circle";
+const UNCHECK = "fa-circle-notch";
 const LINE_THROUGH = "lineThrough";
 
 //Variables(LIST has a array([]) and id starts it at 0 for the array)
