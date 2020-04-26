@@ -12,8 +12,28 @@ const UNCHECK = "fa-question-circle";
 const LINE_THROUGH = "lineThrough";
 
 //Variables(LIST has a array([]) and id starts it at 0 for the array)
-let LIST= []
-    , id = 0;
+let LIST, id;
+
+//get item from localstorage
+let data = localStorage.getItem("TODO");
+
+//check to see if data is not empty for localstorage
+if(data){
+        LIST = JSON.parse(data);
+        id = LIST.length; //set the id to the last one in the list
+        loadList(LIST);//load the list to the user interface
+}else{
+    // if data isn't empty
+    LIST= []
+    id = 0;
+}
+
+//load items to the user's interface
+function loadList(array){
+    array.forEach(function(item){
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
 
 // Show current date
 var options = { weekday : "long", month:"short", day: "numeric", year: "numeric" };
@@ -63,6 +83,9 @@ document.addEventListener("keyup",function(even){
                 trash : false
             });
 
+            //add item to localstorage( this code must be added where the LIST array is updated)
+            localStorage.setItem("TODO", JSON.stringify(LIST));
+
              id++;
         }
         input.value = "";
@@ -105,4 +128,7 @@ list.addEventListener("click", function(event){
     }else if(elementJob == "delete"){
         removeToDo(element);
     }
+
+    //add item to localstorage( this code must be added where the LIST array is updated)
+    localStorage.setItem("TODO", JSON.stringify(LIST));
 });
