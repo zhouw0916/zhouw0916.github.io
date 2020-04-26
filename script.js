@@ -35,6 +35,12 @@ function loadList(array){
     });
 }
 
+//clear the local storage
+clear.addEventListener("click", function(){
+    localeStorage.clear();
+    location.reload();
+});
+
 // Show current date
 var options = { weekday : "long", month:"short", day: "numeric", year: "numeric" };
 var today = new Date();
