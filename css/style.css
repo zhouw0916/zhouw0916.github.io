@@ -9,6 +9,7 @@ body{
 /* ------------ container ------------ */
 .container{
     padding:10px;
+    height: auto; 
     width:380px;
     margin:0 auto;
 }
