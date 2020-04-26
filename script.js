@@ -37,7 +37,7 @@ function loadList(array){
 
 //clear the local storage
 clear.addEventListener("click", function(){
-    localeStorage.clear();
+    localStorage.clear();
     location.reload();
 });
 
