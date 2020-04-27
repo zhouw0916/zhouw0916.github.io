@@ -52,7 +52,7 @@ body{
 .content{
     width:380px;
     height: 350px;
-    max-height:350px;
+    max-height:auto;
     background-color: #FFF;
     overflow: auto;
 }
