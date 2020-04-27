@@ -51,7 +51,9 @@ body{
 /* ------------ content ------------ */
 .content{
     width:380px;
-    height: 350px;
+    /*height: 350px;
+    max-height:350px;*/
+    height: auto;
     max-height:auto;
     background-color: #FFF;
     overflow: auto;
