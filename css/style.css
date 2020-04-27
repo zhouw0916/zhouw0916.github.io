@@ -53,10 +53,10 @@ body{
     width:380px;
     /*height: 350px;
     max-height:350px;*/
-    height: auto;
-    max-height:auto;
+    min-height: 350px;
     background-color: #FFF;
-    overflow: auto;
+    /*overflow: auto;*/
+    overflow: hidden;
 }
 .content::-webkit-scrollbar { 
     display: none; 
